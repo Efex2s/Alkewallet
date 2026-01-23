@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="celesteM4">#FF2196F3</color>
+    <color name="celesteshape">#6200EE</color>
+    <color name="colorpag3">#6200EE</color>
+    <color name="colorbtn">#1800EE</color>
+    <color name="verdebutton">#48B54D</color>
+
+    <!-- colores flecha curva-->
+
+    <color name="arrow_stroke">#A5D6A7</color>
+    <color name="arrow_head">#76FF03</color>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mi_perfil">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="404dp"
+        android:layout_height="221dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="319dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/material_dynamic_neutral95"
+            app:srcCompat="@mipmap/perfil_tres" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="401dp"
+        android:layout_height="479dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/editOpciones"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/setting"
+            android:drawableRight="@drawable/arrow_icon"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            tools:text=" Opciones" />
+
+        <EditText
+            android:id="@+id/editInformacion"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/perfil_cuatro"
+            android:drawableRight="@drawable/arrow_icon"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            tools:text="Mi Información" />
+
+        <EditText
+            android:id="@+id/editTarjetas"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/card"
+            android:drawableRight="@drawable/arrow_icon"
+            android:ems="10"
+            android:inputType="text|textAutoComplete"
+            android:textAlignment="viewStart"
+            tools:text="  Mis tarjetas" />
+
+        <EditText
+            android:id="@+id/editAyuda"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/arrow_icon"
+            android:ems="10"
+            android:textAlignment="viewStart"
+            tools:text=" Centro de ayuda" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPage">
+
+    <ImageView
+        android:id="@+id/img_background_vector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_arrow_curve"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgViewStatusbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/statusbar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textoSingUpPage"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:lines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtViewnombreSingUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/nombreSingUpPage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewnombreSingUpPage" />
+
+        <EditText
+            android:id="@+id/editTxtnombreSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Ingresa tu nombre"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/txtViewapellidosSingUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apellidoSingUpPage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTxtapellidosSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Ingresa tu apellido"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editTxtapellidosSingUpPage"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtapellidosSingUpPage" />
+
+        <TextView
+            android:id="@+id/txtViewemailSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emailSingUpPage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewemailSingUpPage" />
+
+        <EditText
+            android:id="@+id/editTxtemailSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Ingresa tu email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtemailSingUpPage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editTxtemailSingUpPage"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtemailSingUpPage" />
+
+        <TextView
+            android:id="@+id/txtViewcontrasenyaSingUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contrasenyaSingUpPage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewcontrasenyaSingUpPage" />
+
+        <EditText
+            android:id="@+id/editTxtcontrasenyaSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Ingresa tu contraseña"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtcontrasenyaSingUpPage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editTxtcontrasenyaSingUpPage"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtcontrasenyaSingUpPage" />
+
+        <TextView
+            android:id="@+id/txtViewrecontrasenyaSingUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regsitrarcontrasenyaSingUpPage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewrecontrasenyaSingUpPage" />
+
+        <EditText
+            android:id="@+id/editTxtrecontrasenyaSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="Reingresar tu contraseña"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtrecontrasenyaSingUpPage"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editTxtrecontrasenyaSingUpPage"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtrecontrasenyaSingUpPage" />
+
+      <!--//botón para registrarse en caso de no tener cuenta-->
+        <Button
+            android:id="@+id/btnSingUpPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/botonSingUpPage"
+            android:background="@drawable/boton_redondo"
+
+            app:layout_constraintBottom_toTopOf="@+id/buttonActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- Add margin bottom -->
+
+        <TextView
+            android:id="@+id/txtViewYaTienesCuentaSingUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="110dp"
+            android:text="@string/yatienesCuentaSingUpPage"
+            android:textStyle="bold"
+            android:textColor="@color/celesteM4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSingUpPage" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="800dp"
+    android:viewportWidth="400"
+    android:viewportHeight="800">
+
+    <path
+
+
+        android:pathData="M-20,750 C100,650 300,450 340,180"
+        android:strokeColor="#A5D6A7"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+        <!--android:strokeDashArray="12,12" />-->
+
+    <path
+
+
+        android:fillColor="#76FF03"
+        android:pathData="M340,180 L320,165 L355,145 L345,195 Z" />
+
+
+</vector>
+
+<!-- linea continua
