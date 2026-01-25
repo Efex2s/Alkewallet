@@ -22,36 +22,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Login_page"        android:exported="false" />
+        <activity android:name=".login_singup"      android:exported="false" />
+        <activity android:name=".SignupPage"        android:exported="false" />
+        <activity android:name=".Login_Singup_page" android:exported="false" />
 
-        <activity
-            android:name=".Login_page"
-            android:exported="false" />
+        <activity android:name=".Home_Page"         android:exported="false" />
 
-        <activity
-            android:name=".login_singup"
-            android:exported="false" />
+        <activity android:name=".Home_Page_Empty"   android:exported="false" />
 
-        <activity
-            android:name=".SignupPage"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".Home_Page"
-            android:exported="false" />
-
-        <activity
-            android:name=".Mi_perfil"
-            android:exported="false" />
-
-        <activity
-            android:name=".Ingresar_dinero"
-            android:exported="false" />
-
-        <activity
-            android:name=".enviarDinero"
-            android:exported="false" />
+        <activity android:name=".Mi_perfil"         android:exported="false" />
+        <activity android:name=".Ingresar_dinero"   android:exported="false" />
+        <activity android:name=".enviarDinero"      android:exported="false" />
 
     </application>
-
 </manifest>

@@ -30,13 +30,19 @@ public class login_singup extends AppCompatActivity {
         //botón de registro de usuarios
 
         binding.btnSingUpPage.setOnClickListener(v->{
-            startActivity( new Intent(this, Home_Page.class));
+            Intent intent = new Intent(this, Home_Page_Empty.class);
+            startActivity(intent);
             finish();
+
+
         });
 
         //accion del texto-Ya tiene cuenta?
 
         binding.tvYaTienesCuentaSingUpPage.setOnClickListener(v->{
+            //el usuario vuelve a la pantalla login
+            Intent intent = new Intent(this, Login_page.class);
+            startActivity(intent);
            finish();
         });
     }

@@ -23,8 +23,6 @@ public class Ingresar_dinero extends AppCompatActivity {
         binding = ActivityIngresarDinero2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setContentView(R.layout.activity_ingresar_dinero2);
-
 
 
         binding.flechaDireccion.setOnClickListener(v -> onBackPressed());

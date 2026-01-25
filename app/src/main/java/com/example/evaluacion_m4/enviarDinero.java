@@ -22,9 +22,9 @@ public class enviarDinero extends AppCompatActivity {
         binding = ActivityEnviarDineroBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setContentView(R.layout.activity_enviar_dinero);
 
-        binding.imageView4.setOnClickListener(view -> onBackPressed());
+
+        binding.flechaDireccion.setOnClickListener(view -> onBackPressed());
         binding.btnEnviarDinero.setOnClickListener(view -> onBackPressed());
 
     }

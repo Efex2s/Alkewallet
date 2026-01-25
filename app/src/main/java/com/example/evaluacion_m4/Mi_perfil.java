@@ -16,25 +16,16 @@ import com.example.evaluacion_m4.databinding.ActivityMiPerfilBinding;
 
 public class Mi_perfil extends AppCompatActivity {
 
-    private  ActivityLoginPageBinding binding;
+    private  ActivityMiPerfilBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mi_perfil);
+        binding = ActivityMiPerfilBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        ImageButton btnBack = findViewById(R.id.imageButton4);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view){
-                onBackPressed();
-            }
+        binding.btnImageButton4.setOnClickListener(v->{
+            onBackPressed();
         });
     }
 }
-
-
-
-
-
-

@@ -11,12 +11,13 @@
 
     <!-- Flecha para volver -->
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="52dp"
-        android:layout_height="28dp"
+        android:id="@+id/flechaDireccion"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:contentDescription="Volver"
+        android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24" />
@@ -156,15 +157,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
 
-    <!-- Icono de upload (opcional, dentro del botón) -->
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/butEnviar"
-        app:layout_constraintEnd_toEndOf="@+id/butEnviar"
-        app:layout_constraintTop_toTopOf="@+id/butEnviar"
-        app:srcCompat="@android:drawable/ic_menu_upload" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

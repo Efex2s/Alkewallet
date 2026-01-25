@@ -16,7 +16,7 @@ public class Splash_Screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Splash_Screen.this, Login_page.class);
+                Intent intent = new Intent(Splash_Screen.this, Login_Singup_page.class);
                 startActivity(intent);
                 finish(); // Cerramos el Splash para que no puedan volver atrás
             }

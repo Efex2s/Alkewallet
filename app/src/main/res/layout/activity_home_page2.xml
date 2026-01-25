@@ -104,7 +104,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Button
-            android:id="@+id/button_activity_2"
+            android:id="@+id/btnEnviarDinero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -115,7 +115,7 @@
             android:textColor="#000000" />
 
         <Button
-            android:id="@+id/buttonActivity"
+            android:id="@+id/btnIngresarDinero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"

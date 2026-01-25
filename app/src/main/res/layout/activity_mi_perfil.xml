@@ -3,92 +3,66 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Mi_perfil">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="404dp"
+        android:layout_width="match_parent"
         android:layout_height="221dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="319dp"
+            android:id="@+id/btnImageButton4"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="@color/material_dynamic_neutral95"
+            android:background="?android:attr/selectableItemBackground"
             app:srcCompat="@mipmap/perfil_tres" />
-
     </LinearLayout>
 
-    <RadioGroup
-        android:layout_width="401dp"
-        android:layout_height="479dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <EditText
             android:id="@+id/editOpciones"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="10dp"
-            android:drawableLeft="@drawable/setting"
-            android:drawableRight="@drawable/arrow_icon"
-            android:ems="10"
-            android:textAlignment="viewStart"
-            tools:text=" Opciones" />
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/setting"
+            android:drawableEnd="@drawable/arrow_icon"
+            android:hint=" Opciones" />
 
         <EditText
             android:id="@+id/editInformacion"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="10dp"
-            android:drawableLeft="@drawable/perfil_cuatro"
-            android:drawableRight="@drawable/arrow_icon"
-            android:ems="10"
-            android:textAlignment="viewStart"
-            tools:text="Mi Información" />
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/perfil_cuatro"
+            android:drawableEnd="@drawable/arrow_icon"
+            android:hint=" Mi Información" />
 
         <EditText
             android:id="@+id/editTarjetas"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp"
-            android:drawableLeft="@drawable/card"
-            android:drawableRight="@drawable/arrow_icon"
-            android:ems="10"
-            android:inputType="text|textAutoComplete"
-            android:textAlignment="viewStart"
-            tools:text="  Mis tarjetas" />
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/card"
+            android:drawableEnd="@drawable/arrow_icon"
+            android:hint=" Mis tarjetas" />
 
         <EditText
             android:id="@+id/editAyuda"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp"
-            android:drawableRight="@drawable/arrow_icon"
-            android:ems="10"
-            android:textAlignment="viewStart"
-            tools:text=" Centro de ayuda" />
-
-    </RadioGroup>
-
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/arrow_icon"
+            android:hint=" Centro de ayuda" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

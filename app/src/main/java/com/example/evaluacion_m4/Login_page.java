@@ -29,7 +29,11 @@ public class Login_page extends AppCompatActivity {
         //text view para crear cuenta
         });
         binding.textView3.setOnClickListener(v -> {
-            startActivity(new Intent(this, login_singup.class));
+            startActivity(new Intent(this, Login_Singup_page.class));
+
+
+
+
         });
     }
 }
