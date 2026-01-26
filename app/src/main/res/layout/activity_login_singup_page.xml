@@ -7,7 +7,7 @@
     android:background="#FFFFFF">
 
 
-    <!--Fondo celeste-->
+
     <View
     android:id="@+id/top_background"
     android:layout_width="match_parent"

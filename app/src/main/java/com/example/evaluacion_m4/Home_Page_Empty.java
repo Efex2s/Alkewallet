@@ -14,7 +14,7 @@ public class Home_Page_Empty extends AppCompatActivity {
         binding = ActivityHomePageEmptyBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Botón Enviar (En este XML se llama btnEnviarDinero)
+        // Botón Enviar
         binding.btnEnviarDinero.setOnClickListener(v -> {
             startActivity(new Intent(this, enviarDinero.class));
         });
@@ -25,7 +25,7 @@ public class Home_Page_Empty extends AppCompatActivity {
         });
 
 
-        // Botón Perfil
+        // Botón Perfil-no me resulta este salto!!!
         binding.imageView.setOnClickListener(v -> {
             startActivity(new Intent(this, Mi_perfil.class));
         });

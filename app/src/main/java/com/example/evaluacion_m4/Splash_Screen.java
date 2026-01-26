@@ -4,22 +4,32 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.evaluacion_m4.databinding.ActivityLoginSingupPageBinding;
+import com.example.evaluacion_m4.databinding.ActivitySplashBinding;
+
 public class Splash_Screen extends AppCompatActivity {
+
+    //declaramos el binding
+
+    private @NonNull ActivitySplashBinding binding;
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_splash);
+        binding = ActivitySplashBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(Splash_Screen.this, Login_Singup_page.class);
                 startActivity(intent);
-                finish(); // Cerramos el Splash para que no puedan volver atrás
+                finish();
             }
-        }, 3000); // 3 segundos
+        }, 3000);
     }
 }

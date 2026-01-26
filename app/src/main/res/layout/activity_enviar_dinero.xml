@@ -9,7 +9,7 @@
     android:background="#FFFFFF"
     tools:context=".enviarDinero">
 
-    <!-- Flecha para volver -->
+
     <ImageView
         android:id="@+id/flechaDireccion"
         android:layout_width="48dp"
@@ -22,7 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24" />
 
-    <!-- Título -->
     <TextView
         android:id="@+id/textenviardinero"
         android:layout_width="wrap_content"
@@ -35,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="20dp" />
 
-    <!-- Icono de flecha -->
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="84dp"
@@ -46,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textenviardinero"
         app:srcCompat="@drawable/flecha_enviar_dinero" />
 
-    <!-- Nombre del destinatario -->
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="76dp"
@@ -56,7 +55,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/yara_khalil" />
 
-    <!-- Email del destinatario -->
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="0dp"
@@ -70,7 +69,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-    <!-- Cantidad a transferir -->
+
     <TextView
         android:id="@+id/textView16"
         android:layout_width="0dp"
@@ -85,7 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <!-- Campo para cantidad -->
+
     <EditText
         android:id="@+id/editTextText5"
         android:layout_width="0dp"
@@ -104,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-    <!-- Notas de transferencia -->
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="0dp"
@@ -119,7 +118,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
 
-    <!-- Campo para notas -->
+
     <EditText
         android:id="@+id/editTextText6"
         android:layout_width="0dp"
@@ -139,7 +138,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
-    <!-- Botón Enviar Dinero -->
+
     <Button
         android:id="@+id/btnEnviarDinero"
         android:layout_width="0dp"

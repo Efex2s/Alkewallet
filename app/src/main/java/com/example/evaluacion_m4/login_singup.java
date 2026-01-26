@@ -2,21 +2,12 @@ package com.example.evaluacion_m4;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-
-import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.example.evaluacion_m4.databinding.ActivityLoginPageBinding;
 import com.example.evaluacion_m4.databinding.ActivityLoginSingupBinding;
 
 public class login_singup extends AppCompatActivity {
 
-    //declaramos el binding
+    //declaramos el binding, igual que las otras clases
 
     private  ActivityLoginSingupBinding binding;
 
