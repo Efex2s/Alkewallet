@@ -33,7 +33,7 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
-            app:srcCompat="@drawable/circular" />
+            app:srcCompat="@drawable/mujerhermosa" />
 
         <TextView
             android:id="@+id/textView3"

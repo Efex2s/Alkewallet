@@ -17,6 +17,17 @@
     app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/curvaInferior"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/curva_fondo"
+        app:layout_constraintTop_toBottomOf="@id/top_background"
+        android:layout_marginTop="-1dp"/>
+
+
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="fitXY"
