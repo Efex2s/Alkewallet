@@ -31,7 +31,7 @@ public class login_singup extends AppCompatActivity {
         //accion del texto-Ya tiene cuenta?
 
         binding.tvYaTienesCuentaSingUpPage.setOnClickListener(v->{
-            //el usuario vuelve a la pantalla login
+
             Intent intent = new Intent(this, Login_page.class);
             startActivity(intent);
            finish();
