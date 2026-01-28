@@ -12,7 +12,7 @@ import com.example.evaluacion_m4.databinding.ActivitySplashBinding;
 
 public class Splash_Screen extends AppCompatActivity {
 
-    //declaramos el binding
+    //declaramos el binding de la clase
 
     private @NonNull ActivitySplashBinding binding;
 

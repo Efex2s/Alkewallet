@@ -33,6 +33,8 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
+            android:clickable="true"
+            android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
         <TextView
