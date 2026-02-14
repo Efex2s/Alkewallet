@@ -1,0 +1,3 @@
+## 2025-05-14 - [Accessibility and Polish in Android Layouts]
+**Learning:** In legacy or simple Android projects, interactive elements (ImageViews, clickable TextViews) often lack 'contentDescription' and visual feedback (ripples), while decorative backgrounds create noise for screen readers. Using 'importantForAccessibility="no"' and ripple attributes significantly improves the UX for minimal effort.
+**Action:** Always check interactive images for 'contentDescription' and ensure decorative backgrounds are hidden from accessibility services. Add ripple backgrounds to all clickable elements to provide touch feedback.

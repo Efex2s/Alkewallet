@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Volver"
             app:srcCompat="@mipmap/perfil_tres" />
     </LinearLayout>
 
