@@ -3,11 +3,11 @@ package com.example.evaluacion_m4;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.evaluacion_m4.databinding.ActivityLoginSingupPageBinding;
 import com.example.evaluacion_m4.databinding.ActivitySplashBinding;
 
 public class Splash_Screen extends AppCompatActivity {
@@ -23,13 +23,12 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Splash_Screen.this, Login_Singup_page.class);
-                startActivity(intent);
-                finish();
-            }
-        }, 3000);
+        // Reduced delay from 3000ms to 1000ms for faster startup.
+        // Used non-deprecated Handler constructor with Looper.getMainLooper().
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            Intent intent = new Intent(Splash_Screen.this, Login_Singup_page.class);
+            startActivity(intent);
+            finish();
+        }, 1000);
     }
 }
