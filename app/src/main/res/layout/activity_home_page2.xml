@@ -35,6 +35,8 @@
             android:layout_marginStart="300dp"
             android:clickable="true"
             android:focusable="true"
+            android:contentDescription="Mi perfil"
+            android:background="?attr/selectableItemBackgroundBorderless"
             app:srcCompat="@drawable/mujerhermosa" />
 
         <TextView
@@ -74,6 +76,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:contentDescription="Notificaciones"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
@@ -155,6 +161,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="Foto del contacto"
                 android:src="@drawable/hombrehermoso" />
 
             <TextView
@@ -180,6 +187,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="Foto del contacto"
                 android:src="@drawable/mujerfea" />
 
             <TextView
@@ -205,6 +213,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="Foto del contacto"
                 android:src="@drawable/mujerhermosa" />
 
             <TextView
@@ -230,6 +239,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="Foto del contacto"
                 android:src="@drawable/hombrefeo" />
 
             <TextView
