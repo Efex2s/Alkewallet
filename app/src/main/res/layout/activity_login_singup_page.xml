@@ -22,6 +22,7 @@
         android:layout_height="120dp"
         android:scaleType="fitXY"
         android:src="@drawable/curva_fondo"
+        android:importantForAccessibility="no"
         app:layout_constraintTop_toBottomOf="@id/top_background"
         android:layout_marginTop="-1dp"/>
 
@@ -32,6 +33,7 @@
         android:layout_height="0dp"
         android:scaleType="fitXY"
         android:src="@drawable/backgroun_curve"
+        android:importantForAccessibility="no"
         app:layout_constraintTop_toBottomOf="@id/top_background"
         app:layout_constraintBottom_toTopOf="@id/top_background"
         android:layout_marginTop="-80dp" />
@@ -52,7 +54,8 @@
             android:id="@+id/logo"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            android:contentDescription="@string/cd_logo" />
 
 
 
