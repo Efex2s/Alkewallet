@@ -13,6 +13,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
         android:alpha="0.7"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
             android:id="@+id/imgViewStatusbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
             app:srcCompat="@drawable/statusbar" />
 
         <TextView
@@ -68,6 +70,7 @@
             android:ems="10"
             android:hint="Ingresa tu nombre"
             android:inputType="textPersonName"
+            android:autofillHints="personGivenName"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/textView"
@@ -89,6 +92,7 @@
             android:ems="10"
             android:hint="Ingresa tu apellido"
             android:inputType="textPersonName"
+            android:autofillHints="personFamilyName"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/editTxtapellidosSingUpPage"
@@ -110,6 +114,7 @@
             android:ems="10"
             android:hint="Ingresa tu email"
             android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
             app:layout_constraintEnd_toEndOf="@+id/editTxtemailSingUpPage"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/editTxtemailSingUpPage"
@@ -131,6 +136,7 @@
             android:ems="10"
             android:hint="Ingresa tu contraseña"
             android:inputType="textPassword"
+            android:autofillHints="newPassword"
             app:layout_constraintEnd_toEndOf="@+id/editTxtcontrasenyaSingUpPage"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/editTxtcontrasenyaSingUpPage"
@@ -140,7 +146,7 @@
             android:id="@+id/txtViewrecontrasenyaSingUpPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/regsitrarcontrasenyaSingUpPage"
+            android:text="@string/registrarcontrasenyaSingUpPage"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtViewrecontrasenyaSingUpPage" />
 
@@ -153,6 +159,7 @@
             android:ems="10"
             android:hint="Reingresar tu contraseña"
             android:inputType="textPassword"
+            android:autofillHints="newPassword"
             app:layout_constraintEnd_toEndOf="@+id/editTxtrecontrasenyaSingUpPage"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/editTxtrecontrasenyaSingUpPage"

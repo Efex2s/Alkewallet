@@ -1,0 +1,3 @@
+## 2025-01-24 - Accessibility and Usability Enhancements
+**Learning:** In Android applications with multiple similar layouts, ensuring consistent accessibility attributes (like `contentDescription` and `importantForAccessibility`) and usability helpers (like `autofillHints`) is crucial for a cohesive user experience. Orphaned layouts and activities in the manifest can cause lint failures and should be pruned to maintain project health.
+**Action:** Always check `AndroidManifest.xml` for missing classes and use `autofillHints` for all form-based `EditText` fields. Use `importantForAccessibility="no"` for all decorative background vectors.

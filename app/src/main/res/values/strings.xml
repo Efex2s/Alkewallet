@@ -5,10 +5,16 @@
     <string name="apellidoSingUpPage">Apellido</string>
     <string name="emailSingUpPage">Email</string>
     <string name="contrasenyaSingUpPage">Contraseña</string>
-    <string name="regsitrarcontrasenyaSingUpPage">Reingresar contraseña</string>
+    <string name="registrarcontrasenyaSingUpPage">Reingresar contraseña</string>
     <string name="textoSingUpPage">Registrarse y empieza a transferir!!</string>
     <string name="botonSingUpPage">Crear Cuenta</string>
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+    <string name="login_text">Logea y empieza a transferir!!</string>
+    <string name="create_new_account">Crea una cuenta nueva</string>
+    <string name="login_button">Login</string>
+    <string name="cd_profile_image">Foto de perfil</string>
+    <string name="cd_notifications">Notificaciones</string>
+    <string name="cd_logo">Alke Wallet Logo</string>
 </resources>
