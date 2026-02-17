@@ -1,0 +1,3 @@
+## 2025-02-17 - Memory Safe Splash Screen & Perceived Performance
+**Learning:** Using a `Handler` without `Looper.getMainLooper()` is deprecated and can lead to unpredictable behavior. More importantly, failing to remove callbacks in `onDestroy()` for delayed tasks (like splash screens) causes memory leaks because the `Runnable` (and often an implicit reference to the `Activity`) persists in the `Handler`'s queue. Additionally, long splash screens (3s+) negatively impact perceived performance.
+**Action:** Always use `new Handler(Looper.getMainLooper())` for UI tasks. Store `Runnable` references as members and call `handler.removeCallbacks(runnable)` in `onDestroy()`. Target splash durations between 1.5s-2s for a snappier feel.
