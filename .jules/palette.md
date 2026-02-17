@@ -1,0 +1,3 @@
+## 2025-05-14 - [Accessibility and Form UX Enhancements]
+**Learning:** In legacy Android projects with inconsistent naming conventions, adding accessibility and UX improvements like `autofillHints` and `contentDescription` is a high-impact, low-risk way to modernize the feel of the app. It's crucial to verify `AndroidManifest.xml` when touching onboarding flows, as naming mismatches between XML layouts and Java classes (e.g., `SignupPage` vs `login_singup`) are common and can break the build if linted.
+**Action:** Always check `tools:context` and the manifest for existing errors before submitting, even if you only intended to change layout attributes. Apply `tools:targetApi="o"` when using `autofillHints` to maintain lint cleanliness.
