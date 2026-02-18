@@ -1,0 +1,3 @@
+## 2025-05-22 - Splash Screen and Handler Optimization
+**Learning:** Arbitrary delays in splash screens (3s) significantly hurt perceived startup performance. Additionally, using anonymous Runnables with Handler.postDelayed without lifecycle cleanup in onDestroy leads to memory leaks and unpredictable behavior if the activity is destroyed before the delay expires. Using ViewBinding for static layouts with no view interaction adds unnecessary inflation and object allocation overhead.
+**Action:** Always reduce splash delays to the minimum branding requirement (e.g., 2s). Always store Runnable/Handler references and clean them up in onDestroy. Avoid ViewBinding for static activities where R.layout is sufficient.
