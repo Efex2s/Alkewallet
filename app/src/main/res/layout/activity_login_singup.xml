@@ -5,15 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupPage">
+    tools:context=".login_singup">
 
     <ImageView
         android:id="@+id/img_background_vector"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0.7"
+        android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
-        android:alpha="0.7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +32,8 @@
         <ImageView
             android:id="@+id/imgViewStatusbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no" />
 
         <TextView
             android:id="@+id/textView"
@@ -57,8 +59,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="name"
             android:hint="Ingresa tu nombre"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:targetApi="o" />
 
         <!-- Apellido -->
         <TextView
@@ -73,8 +77,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="familyName"
             android:hint="Ingresa tu apellido"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:targetApi="o" />
 
 
         <TextView
@@ -89,8 +95,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="emailAddress"
             android:hint="Ingresa tu email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            tools:targetApi="o" />
 
 
         <TextView
@@ -105,8 +113,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="password"
             android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:targetApi="o" />
 
 
         <TextView
@@ -120,10 +130,12 @@
             android:id="@+id/editTxtrecontrasenyaSingUpPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginBottom="30dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
             android:hint="Reingresar tu contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:targetApi="o" />
 
 
         <Button
