@@ -11,4 +11,17 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+
+    <!-- Home Page -->
+    <string name="home_title">Inicio</string>
+    <string name="home_welcome">Hola, Usuario!</string>
+    <string name="home_total_balance">Balance Total</string>
+    <string name="home_latest_transactions">Últimas transacciones</string>
+    <string name="home_send_money">Enviar Dinero</string>
+    <string name="home_deposit_money">Ingresar Dinero</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="desc_profile_picture">Foto de perfil</string>
+    <string name="desc_notifications">Notificaciones</string>
+    <string name="desc_transaction_avatar">Avatar de transacción</string>
 </resources>

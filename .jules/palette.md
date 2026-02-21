@@ -1,0 +1,3 @@
+## 2024-05-22 - Semantic Color Coding for Financial Transactions
+**Learning:** In financial applications, color-coding transaction amounts (green for income, red for expenses) provides immediate visual intuition and reduces cognitive load when scanning transaction lists. This should be coupled with accessibility labels to ensure the same information is available to screen reader users.
+**Action:** Always look for opportunities to apply semantic coloring to data that has inherent "positive/negative" or "success/failure" states, ensuring it adheres to the app's color palette and accessibility standards.
