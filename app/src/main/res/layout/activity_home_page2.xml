@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
-            android:text="Inicio"
+            android:text="@string/home_title"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
@@ -33,7 +33,9 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:contentDescription="@string/desc_profile_picture"
             android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
@@ -42,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:text="Hola, Usuario!"
+            android:text="@string/home_welcome"
             android:textColor="#D5DDE3"
             android:textSize="20sp" />
 
@@ -53,7 +55,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
             android:fontFamily="casual"
-            android:text="Balance Total"
+            android:text="@string/home_total_balance"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -74,6 +76,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/desc_notifications"
+            android:focusable="true"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
@@ -85,7 +91,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="234dp"
         android:fontFamily="casual"
-        android:text="Ultimas transacciones"
+        android:text="@string/home_latest_transactions"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
@@ -113,7 +119,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:backgroundTint="#7ADA58"
-            android:text="Enviar Dinero"
+            android:text="@string/home_send_money"
             android:textColor="#000000" />
 
         <Button
@@ -125,7 +131,7 @@
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:backgroundTint="#03A9F4"
-            android:text="Ingresar Dinero" />
+            android:text="@string/home_deposit_money" />
 
     </LinearLayout>
 
@@ -155,6 +161,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_transaction_avatar"
                 android:src="@drawable/hombrehermoso" />
 
             <TextView
@@ -165,7 +172,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+68.0"
-                android:textScaleX="2" />
+                android:textColor="@color/verdebutton" />
         </LinearLayout>
 
         <LinearLayout
@@ -180,6 +187,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_transaction_avatar"
                 android:src="@drawable/mujerfea" />
 
             <TextView
@@ -190,7 +198,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-20.0"
-                android:textScaleX="2" />
+                android:textColor="@color/red_expense" />
         </LinearLayout>
 
         <LinearLayout
@@ -205,6 +213,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_transaction_avatar"
                 android:src="@drawable/mujerhermosa" />
 
             <TextView
@@ -215,7 +224,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+120.0"
-                android:textScaleX="2" />
+                android:textColor="@color/verdebutton" />
         </LinearLayout>
 
         <LinearLayout
@@ -230,6 +239,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_transaction_avatar"
                 android:src="@drawable/hombrefeo" />
 
             <TextView
@@ -240,7 +250,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-54.20"
-                android:textScaleX="2" />
+                android:textColor="@color/red_expense" />
         </LinearLayout>
     </LinearLayout>
 

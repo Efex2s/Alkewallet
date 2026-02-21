@@ -12,5 +12,6 @@
 
     <color name="arrow_stroke">#A5D6A7</color>
     <color name="arrow_head">#76FF03</color>
+    <color name="red_expense">#F44336</color>
 
 </resources>
