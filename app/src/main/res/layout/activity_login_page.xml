@@ -12,6 +12,7 @@
         android:id="@+id/img_background_vector"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
         android:alpha="0.7"
@@ -40,11 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginHorizontal="16dp"
+        android:autofillHints="emailAddress"
         android:hint="Ingresa tu email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:targetApi="o" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -52,11 +55,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginHorizontal="16dp"
+        android:autofillHints="password"
         android:hint="Ingresa tu contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:targetApi="o" />
 
     <TextView
         android:id="@+id/tvOlvidasteContraseña"
@@ -64,6 +69,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         android:text="¿Olvidaste tu contraseña?"
         android:textColor="@color/celesteM4"
         android:textStyle="bold"
@@ -90,6 +98,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         android:text="Crea una cuenta nueva"
         android:textColor="@color/celesteM4"
         android:textStyle="bold"
