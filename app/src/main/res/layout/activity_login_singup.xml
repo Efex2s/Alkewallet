@@ -11,6 +11,7 @@
         android:id="@+id/img_background_vector"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
         android:alpha="0.7"
@@ -57,8 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="name"
             android:hint="Ingresa tu nombre"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:targetApi="o" />
 
         <!-- Apellido -->
         <TextView
@@ -73,8 +76,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="personFamilyName"
             android:hint="Ingresa tu apellido"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:targetApi="o" />
 
 
         <TextView
@@ -89,8 +94,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="emailAddress"
             android:hint="Ingresa tu email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            tools:targetApi="o" />
 
 
         <TextView
@@ -105,8 +112,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:autofillHints="password"
             android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:targetApi="o" />
 
 
         <TextView
@@ -122,8 +131,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="30dp"
+            android:autofillHints="password"
             android:hint="Reingresar tu contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:targetApi="o" />
 
 
         <Button
@@ -142,6 +153,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:text="¿Ya tienes una cuenta? Inicia sesión"
             android:textStyle="bold"
             android:textColor="@color/celesteM4" />
