@@ -85,7 +85,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="234dp"
         android:fontFamily="casual"
-        android:text="Ultimas transacciones"
+        android:text="Últimas transacciones"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
