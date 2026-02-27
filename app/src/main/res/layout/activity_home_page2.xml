@@ -34,6 +34,7 @@
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
             android:clickable="true"
+            android:contentDescription="@string/profile_icon_description"
             android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
@@ -74,6 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:contentDescription="@string/notifications_icon_description"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
@@ -85,7 +87,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="234dp"
         android:fontFamily="casual"
-        android:text="Ultimas transacciones"
+        android:text="Últimas transacciones"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
