@@ -1,0 +1,3 @@
+## 2024-05-15 - Manifest MissingClass and Unused Assets
+**Learning:** Pre-existing lint errors, such as 'MissingClass' warnings in the AndroidManifest.xml caused by referencing non-existent activities (e.g., '.SignupPage'), block the build verification pipeline and must be resolved to allow performance or UX validations. Additionally, large unused assets like 'circular.png' (~824KB) can significantly bloat APK size without being referenced in layouts or code.
+**Action:** Always run './gradlew lintDebug' early to identify build-blocking errors and scan for large unreferenced assets to optimize APK footprint.
