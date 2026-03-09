@@ -23,6 +23,7 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
+        // Reducimos el tiempo de espera de 3000ms a 2000ms para mejorar la velocidad percibida de inicio.
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -30,6 +31,6 @@ public class Splash_Screen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 2000);
     }
 }
