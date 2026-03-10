@@ -1,0 +1,3 @@
+## 2024-03-10 - Optimizing APK Size and Startup
+**Learning:** Build-blocking lint errors (MissingClass) from missing source files (e.g., SignupPage.java) must be resolved first to allow for automated performance verification. Unused large binary assets (e.g., circular.png @ 824KB) are high-impact, low-risk targets for APK size optimization when they are confirmed to have no references in code or layouts.
+**Action:** Always run `./gradlew lintDebug` early to identify dead code or missing references that might block the pipeline or indicate unused resources. Use `grep` to rigorously verify that an asset is unreferenced before removal.
