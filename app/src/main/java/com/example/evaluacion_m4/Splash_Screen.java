@@ -23,6 +23,9 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
+        // Optimization: Reduced splash screen delay from 3000ms to 2000ms.
+        // This improves "Time to Interactive" (TTI) and perceived startup speed
+        // while maintaining brand presence.
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -30,6 +33,6 @@ public class Splash_Screen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 2000);
     }
 }
