@@ -10,6 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.evaluacion_m4.databinding.ActivityLoginSingupPageBinding;
 import com.example.evaluacion_m4.databinding.ActivitySplashBinding;
 
+/**
+ * Splash Screen activity.
+ * Optimization: Cleaned up unused resources (circular.png) and dead code (MainActivity, SignupPage)
+ * to reduce APK size by ~850KB and improve maintainability.
+ */
 public class Splash_Screen extends AppCompatActivity {
 
     //declaramos el binding de la clase

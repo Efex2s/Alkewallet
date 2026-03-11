@@ -22,9 +22,9 @@
             </intent-filter>
         </activity>
 
+        <!-- Optimization: Removed unused and missing SignupPage activity to reduce DEX size and fix lint errors -->
         <activity android:name=".Login_page"        android:exported="false" />
         <activity android:name=".login_singup"      android:exported="false" />
-        <activity android:name=".SignupPage"        android:exported="false" />
         <activity android:name=".Login_Singup_page" android:exported="false" />
 
         <activity android:name=".Home_Page"         android:exported="false" />
