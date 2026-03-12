@@ -7,7 +7,6 @@ import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.evaluacion_m4.databinding.ActivityLoginSingupPageBinding;
 import com.example.evaluacion_m4.databinding.ActivitySplashBinding;
 
 public class Splash_Screen extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class Splash_Screen extends AppCompatActivity {
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        // Optimize perceived startup time by reducing splash delay to 2 seconds
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -30,6 +29,6 @@ public class Splash_Screen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 2000);
     }
 }
