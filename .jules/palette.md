@@ -1,0 +1,3 @@
+## 2024-05-15 - Refactoring Navigation Menu Items from EditText to TextView
+**Learning:** Using `EditText` for navigation or menu items is a poor UX/Accessibility pattern as it unnecessarily triggers the soft keyboard and suggests text input to the user. This creates confusion and friction. Refactoring these to `TextView` (or `Button`) with `android:clickable="true"` and `android:focusable="true"` maintains the interaction while preserving correct semantics.
+**Action:** Always verify if interactive text elements are intended for input or navigation. Use `TextView` with `?attr/selectableItemBackground` for menu-like items to ensure proper accessibility and visual feedback without triggering the keyboard.
