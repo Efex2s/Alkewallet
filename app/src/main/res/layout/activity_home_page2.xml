@@ -26,7 +26,7 @@
             android:layout_marginTop="40dp"
             android:text="Inicio"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <ImageView
             android:id="@+id/imageView"
@@ -35,7 +35,7 @@
             android:layout_marginStart="300dp"
             android:clickable="true"
             android:focusable="true"
-            app:srcCompat="@drawable/mujerhermosa" />
+            app:srcCompat="@drawable/mujerhermosa"/>
 
         <TextView
             android:id="@+id/textView3"
@@ -44,7 +44,7 @@
             android:layout_marginStart="40dp"
             android:text="Hola, Usuario!"
             android:textColor="#D5DDE3"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/textView5"
@@ -56,7 +56,7 @@
             android:text="Balance Total"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView6"
@@ -66,7 +66,7 @@
             android:text="$124.57"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/campana" />
+            app:srcCompat="@drawable/campana"/>
     </LinearLayout>
 
     <TextView
@@ -91,7 +91,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <LinearLayout
         android:id="@+id/Linear"
@@ -114,7 +114,7 @@
             android:layout_weight="1"
             android:backgroundTint="#7ADA58"
             android:text="Enviar Dinero"
-            android:textColor="#000000" />
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnIngresarDinero"
@@ -125,7 +125,7 @@
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:backgroundTint="#03A9F4"
-            android:text="Ingresar Dinero" />
+            android:text="Ingresar Dinero"/>
 
     </LinearLayout>
 
@@ -155,7 +155,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/hombrehermoso" />
+                android:src="@drawable/hombrehermoso"/>
 
             <TextView
                 android:id="@+id/textenviardinero1"
@@ -164,8 +164,7 @@
                 android:layout_marginStart="160dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
-                android:text="+68.0"
-                android:textScaleX="2" />
+                android:text="+68.0" />
         </LinearLayout>
 
         <LinearLayout
@@ -180,7 +179,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/mujerfea" />
+                android:src="@drawable/mujerfea"/>
 
             <TextView
                 android:id="@+id/textenviardinero2"
@@ -189,8 +188,7 @@
                 android:layout_marginStart="160dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
-                android:text="-20.0"
-                android:textScaleX="2" />
+                android:text="-20.0" />
         </LinearLayout>
 
         <LinearLayout
@@ -205,7 +203,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/mujerhermosa" />
+                android:src="@drawable/mujerhermosa"/>
 
             <TextView
                 android:id="@+id/textenviardinero3"
@@ -214,8 +212,7 @@
                 android:layout_marginStart="160dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
-                android:text="+120.0"
-                android:textScaleX="2" />
+                android:text="+120.0" />
         </LinearLayout>
 
         <LinearLayout
@@ -230,7 +227,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/hombrefeo" />
+                android:src="@drawable/hombrefeo"/>
 
             <TextView
                 android:id="@+id/textenviardinero4"
@@ -239,8 +236,7 @@
                 android:layout_marginStart="160dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
-                android:text="-54.20"
-                android:textScaleX="2" />
+                android:text="-54.20" />
         </LinearLayout>
     </LinearLayout>
 
