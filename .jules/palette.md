@@ -1,0 +1,3 @@
+## 2024-05-24 - [Refactoring Navigation Menus]
+**Learning:** Using `EditText` for navigation menu items is a poor UX pattern because it erroneously triggers the soft keyboard when the user intends to navigate. Refactoring these to `TextView` with `android:background="?attr/selectableItemBackground"`, `android:clickable="true"`, and `android:focusable="true"` provides expected visual feedback and interaction semantics.
+**Action:** Always verify if component IDs are referenced in Java/Kotlin source code when changing the View class in XML (e.g., EditText to TextView) to prevent runtime `ClassCastException`. Ensure accessibility with `android:contentDescription`.
