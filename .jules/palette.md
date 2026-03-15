@@ -1,0 +1,3 @@
+## 2025-05-14 - Refactoring Navigation Menus from EditText to TextView
+**Learning:** Using `EditText` for static navigation items is a significant UX and accessibility blocker. It erroneously triggers the soft keyboard on touch and provides the wrong semantic role to screen readers. Switching to `TextView` with `selectableItemBackground` and `contentDescription` fixes these issues while maintaining the desired visual layout.
+**Action:** Always verify if interactive list-like items are using input-specific widgets and refactor them to semantic alternatives. Use `grep` to ensure no Java/Kotlin code performs hard casts to the old widget type before refactoring.
