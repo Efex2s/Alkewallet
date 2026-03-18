@@ -7,7 +7,6 @@ import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.evaluacion_m4.databinding.ActivityLoginSingupPageBinding;
 import com.example.evaluacion_m4.databinding.ActivitySplashBinding;
 
 public class Splash_Screen extends AppCompatActivity {
@@ -30,6 +29,6 @@ public class Splash_Screen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 2000); // Optimized from 3000ms for better startup speed
     }
 }
