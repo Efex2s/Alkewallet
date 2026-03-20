@@ -16,6 +16,7 @@
         <activity
             android:name=".Splash_Screen"
             android:exported="true">
+            <!-- Optimization: LAUNCHER activity for the application. -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,7 +25,6 @@
 
         <activity android:name=".Login_page"        android:exported="false" />
         <activity android:name=".login_singup"      android:exported="false" />
-        <activity android:name=".SignupPage"        android:exported="false" />
         <activity android:name=".Login_Singup_page" android:exported="false" />
 
         <activity android:name=".Home_Page"         android:exported="false" />
