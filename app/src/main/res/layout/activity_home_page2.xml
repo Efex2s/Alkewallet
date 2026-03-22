@@ -33,7 +33,9 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:contentDescription="@string/desc_profile_icon"
             android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
@@ -74,6 +76,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/desc_notification_icon"
+            android:focusable="true"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
@@ -165,6 +171,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+68.0"
+                android:textColor="@color/transaction_positive"
                 android:textScaleX="2" />
         </LinearLayout>
 
@@ -190,6 +197,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-20.0"
+                android:textColor="@color/transaction_negative"
                 android:textScaleX="2" />
         </LinearLayout>
 
@@ -215,6 +223,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+120.0"
+                android:textColor="@color/transaction_positive"
                 android:textScaleX="2" />
         </LinearLayout>
 
@@ -240,6 +249,7 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-54.20"
+                android:textColor="@color/transaction_negative"
                 android:textScaleX="2" />
         </LinearLayout>
     </LinearLayout>
