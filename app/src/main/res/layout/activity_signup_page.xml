@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupPage">
+    tools:context=".login_singup">
 
     <ImageView
         android:id="@+id/img_background_vector"
@@ -24,125 +25,96 @@
         android:orientation="vertical"
         android:paddingLeft="36dp"
         android:paddingRight="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
 
         <ImageView
             android:id="@+id/imgViewStatusbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/statusbar" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/textoSingUpPage"
+            android:text="Regístrate y empieza a transferir!!"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
             android:textSize="34sp"
             android:textStyle="bold"
-            android:lines="2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:lines="2" />
 
+        <!-- Nombre -->
         <TextView
             android:id="@+id/txtViewnombreSingUpPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="@string/nombreSingUpPage"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewnombreSingUpPage" />
+            android:layout_marginTop="30dp"
+            android:text="Nombre" />
 
         <EditText
             android:id="@+id/editTxtnombreSingUpPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:ems="10"
             android:hint="Ingresa tu nombre"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            android:inputType="textPersonName" />
 
+        <!-- Apellido -->
         <TextView
             android:id="@+id/txtViewapellidosSingUpPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/apellidoSingUpPage"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            android:layout_marginTop="16dp"
+            android:text="Apellido" />
 
         <EditText
             android:id="@+id/editTxtapellidosSingUpPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:ems="10"
             android:hint="Ingresa tu apellido"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/editTxtapellidosSingUpPage"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtapellidosSingUpPage" />
+            android:inputType="textPersonName" />
+
 
         <TextView
             android:id="@+id/txtViewemailSingUpPage"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/emailSingUpPage"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewemailSingUpPage" />
+            android:layout_marginTop="16dp"
+            android:text="Email" />
 
         <EditText
             android:id="@+id/editTxtemailSingUpPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:ems="10"
             android:hint="Ingresa tu email"
-            android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="@+id/editTxtemailSingUpPage"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/editTxtemailSingUpPage"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtemailSingUpPage" />
+            android:inputType="textEmailAddress" />
+
 
         <TextView
             android:id="@+id/txtViewcontrasenyaSingUpPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/contrasenyaSingUpPage"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewcontrasenyaSingUpPage" />
+            android:layout_marginTop="16dp"
+            android:text="Contraseña" />
 
         <EditText
             android:id="@+id/editTxtcontrasenyaSingUpPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:ems="10"
             android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/editTxtcontrasenyaSingUpPage"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/editTxtcontrasenyaSingUpPage"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtcontrasenyaSingUpPage" />
+            android:inputType="textPassword" />
+
 
         <TextView
             android:id="@+id/txtViewrecontrasenyaSingUpPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/regsitrarcontrasenyaSingUpPage"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewrecontrasenyaSingUpPage" />
+            android:layout_marginTop="16dp"
+            android:text="Confirmar Contraseña" />
 
         <EditText
             android:id="@+id/editTxtrecontrasenyaSingUpPage"
@@ -150,13 +122,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="30dp"
-            android:ems="10"
             android:hint="Reingresar tu contraseña"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/editTxtrecontrasenyaSingUpPage"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/editTxtrecontrasenyaSingUpPage"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtrecontrasenyaSingUpPage" />
+            android:inputType="textPassword" />
 
 
         <Button
@@ -165,26 +132,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/botonSingUpPage"
-            android:background="@drawable/boton_redondo"
-
-            app:layout_constraintBottom_toTopOf="@+id/buttonActivity"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="Registrarse"
+            android:background="@drawable/boton_redondo" />
 
 
         <TextView
-            android:id="@+id/txtViewYaTienesCuentaSingUpPage"
+            android:id="@+id/tvYaTienesCuentaSingUpPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:paddingLeft="110dp"
-            android:text="@string/yatienesCuentaSingUpPage"
+            android:layout_gravity="center"
+            android:text="¿Ya tienes una cuenta? Inicia sesión"
             android:textStyle="bold"
-            android:textColor="@color/celesteM4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSingUpPage" />
+            android:textColor="@color/celesteM4" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
