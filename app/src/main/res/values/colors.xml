@@ -13,4 +13,8 @@
     <color name="arrow_stroke">#A5D6A7</color>
     <color name="arrow_head">#76FF03</color>
 
+    <!-- Financial Colors -->
+    <color name="transaction_positive">#4CAF50</color>
+    <color name="transaction_negative">#F44336</color>
+
 </resources>

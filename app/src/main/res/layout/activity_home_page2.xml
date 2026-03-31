@@ -155,6 +155,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_user_avatar"
                 android:src="@drawable/hombrehermoso" />
 
             <TextView
@@ -165,7 +166,8 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+68.0"
-                android:textScaleX="2" />
+                android:textColor="@color/transaction_positive"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -180,6 +182,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_user_avatar"
                 android:src="@drawable/mujerfea" />
 
             <TextView
@@ -190,7 +193,8 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-20.0"
-                android:textScaleX="2" />
+                android:textColor="@color/transaction_negative"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -205,6 +209,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_user_avatar"
                 android:src="@drawable/mujerhermosa" />
 
             <TextView
@@ -215,7 +220,8 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+120.0"
-                android:textScaleX="2" />
+                android:textColor="@color/transaction_positive"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -230,6 +236,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/desc_user_avatar"
                 android:src="@drawable/hombrefeo" />
 
             <TextView
@@ -240,7 +247,8 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-54.20"
-                android:textScaleX="2" />
+                android:textColor="@color/transaction_negative"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
