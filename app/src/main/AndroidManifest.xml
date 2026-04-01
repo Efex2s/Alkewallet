@@ -24,7 +24,7 @@
 
         <activity android:name=".Login_page"        android:exported="false" />
         <activity android:name=".login_singup"      android:exported="false" />
-        <activity android:name=".SignupPage"        android:exported="false" />
+        <!-- Optimization: Removed non-existent SignupPage activity to reduce APK size and ensure build stability -->
         <activity android:name=".Login_Singup_page" android:exported="false" />
 
         <activity android:name=".Home_Page"         android:exported="false" />
