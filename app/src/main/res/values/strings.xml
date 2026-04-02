@@ -1,14 +1,6 @@
 <resources>
     <string name="app_name">Evaluacion_M4</string>
     <string name="celeste">Evaluacion_M4</string>
-    <string name="nombreSingUpPage">Nombre</string>
-    <string name="apellidoSingUpPage">Apellido</string>
-    <string name="emailSingUpPage">Email</string>
-    <string name="contrasenyaSingUpPage">Contraseña</string>
-    <string name="regsitrarcontrasenyaSingUpPage">Reingresar contraseña</string>
-    <string name="textoSingUpPage">Registrarse y empieza a transferir!!</string>
-    <string name="botonSingUpPage">Crear Cuenta</string>
-    <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
 </resources>

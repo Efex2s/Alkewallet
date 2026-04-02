@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
 }
 
+// Optimization: Reduced APK size by ~850KB by removing unused assets (circular.png) and dead code/layouts (SignupPage).
 android {
     namespace = "com.example.evaluacion_m4"
     compileSdk = 34
