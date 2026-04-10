@@ -11,4 +11,18 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+
+    <string name="menu_opciones">Opciones</string>
+    <string name="menu_informacion">Mi Información</string>
+    <string name="menu_tarjetas">Mis tarjetas</string>
+    <string name="menu_ayuda">Centro de ayuda</string>
+
+    <string name="desc_opciones">Abrir opciones de configuración</string>
+    <string name="desc_informacion">Ver información personal</string>
+    <string name="desc_tarjetas">Administrar tarjetas bancarias</string>
+    <string name="desc_ayuda">Obtener ayuda y soporte</string>
+    <string name="desc_volver">Volver a la pantalla anterior</string>
+    <string name="desc_logo">Logo de la aplicación Alke Wallet</string>
+    <string name="desc_perfil">Mi perfil</string>
+    <string name="desc_notificaciones">Notificaciones</string>
 </resources>
