@@ -11,4 +11,10 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+    <string name="login_title">Logea y empieza a transferir!!</string>
+    <string name="hint_email">Ingresa tu email</string>
+    <string name="hint_password">Ingresa tu contraseña</string>
+    <string name="btn_login">Login</string>
+    <string name="text_create_account">Crea una cuenta nueva</string>
+    <string name="desc_logo">Logo de la aplicación</string>
 </resources>
