@@ -1,0 +1,3 @@
+## 2025-01-24 - [Improving Authentication Flow Accessibility and Interaction]
+**Learning:** Interactive TextViews (like "Forgot Password" or "Create Account" links) should have explicit touch feedback and a sufficient touch target size. Simply setting them as clickable is often not enough for a good UX. Autofill hints are also crucial for a seamless login experience on mobile.
+**Action:** Always add `android:background="?attr/selectableItemBackground"`, `android:padding="8dp"`, `android:clickable="true"`, and `android:focusable="true"` to interactive TextViews. Ensure `android:autofillHints` are set for authentication fields.
