@@ -23,6 +23,7 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
+        // Optimization: Reduce delay to 1000ms to improve perceived startup performance
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -30,6 +31,6 @@ public class Splash_Screen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 1000);
     }
 }
