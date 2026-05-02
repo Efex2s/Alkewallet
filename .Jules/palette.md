@@ -1,0 +1,3 @@
+## 2024-05-02 - Profile Menu UX and Accessibility Improvements
+**Learning:** Using `EditText` for navigational menu items causes the soft keyboard to trigger unnecessarily, which is jarring for users. Converting these to interactive `TextView`s with `?attr/selectableItemBackground` provides a much cleaner experience while maintaining the look and feel. Additionally, using `app:drawableStartCompat` and `app:drawableEndCompat` ensures consistent icon rendering across different API levels.
+**Action:** Always use `TextView` for static or navigational menu items. Ensure interactive elements have explicit ripple feedback and are marked as clickable/focusable for accessibility.
