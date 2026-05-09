@@ -1,0 +1,3 @@
+## 2024-06-05 - Reducing artificial splash delays
+**Learning:** Artificial splash delays (e.g., 3000ms) are a common performance anti-pattern that negatively impacts the perceived speed of the application. Reducing these delays significantly improves the user experience without affecting core functionality. Additionally, using `new Handler(Looper.getMainLooper())` is preferred over the deprecated `new Handler()` constructor for main-thread operations.
+**Action:** Audit the codebase for fixed delays in splash screens or loading states and reduce them to the minimum necessary. Always use the modern `Handler` constructor with an explicit `Looper`.
