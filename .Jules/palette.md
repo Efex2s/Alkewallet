@@ -1,0 +1,3 @@
+## 2024-05-10 - Using TextView for Navigation Menus
+**Learning:** In Android, using `EditText` for navigational or static menu items (even if they have `android:focusable="false"`) can lead to confusing UX where the user expects to type, or worse, triggers the soft keyboard unintentionally if not handled correctly. `TextView` with `selectableItemBackground` and `gravity="center_vertical"` provides a much better and predictable experience for list-like navigation.
+**Action:** Always prefer `TextView` over `EditText` for menu items and navigation lists. Ensure `clickable="true"` and `focusable="true"` are set for accessibility.
