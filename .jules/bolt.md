@@ -1,0 +1,3 @@
+## 2026-05-13 - Splash Screen Delay Optimization
+**Learning:** Artificial delays (e.g., a 3-second splash screen) negatively impact the perceived performance and user experience of the application. Modern Android development favors removing these artificial barriers or significantly reducing them if they are required for branding. Additionally, using the default `new Handler()` constructor is deprecated; `new Handler(Looper.getMainLooper())` should be used for main-thread operations to ensure thread safety.
+**Action:** Audit the codebase for hardcoded `postDelayed` calls that serve no functional purpose other than "displaying a screen" and reduce them to the minimum required. Always use `Looper.getMainLooper()` when instantiating a `Handler` on the main thread.
