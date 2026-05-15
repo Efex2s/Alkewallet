@@ -1,0 +1,3 @@
+## 2024-05-15 - Improving Profile Navigation Accessibility and Semantics
+**Learning:** Using `EditText` for navigational or static menu items is a UX anti-pattern as it triggers the soft keyboard unnecessarily. Replacing them with `TextView` while maintaining `clickable` and `focusable` attributes provides a cleaner, more intuitive interaction. Additionally, using `minHeight` and `padding` ensures adequate touch target size (at least 48dp) for better accessibility.
+**Action:** Always prefer `TextView` with `?attr/selectableItemBackground` for list-like menu items that don't require user input.
