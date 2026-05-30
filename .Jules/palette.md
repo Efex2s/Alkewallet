@@ -1,0 +1,3 @@
+## 2026-05-30 - Navigational Menus Accessibility & UX
+**Learning:** In this project, some profile menu items were implemented using `EditText` with `android:hint`. This is a poor UX choice as it triggers the soft keyboard when tapped and misleads screen readers. Using `TextView` with `selectableItemBackground` provides a better semantic representation and a cleaner interaction for navigational elements.
+**Action:** Use `TextView` instead of `EditText` for navigational list items. Ensure they have `clickable="true"`, `focusable="true"`, and appropriate `selectableItemBackground` for visual feedback.
