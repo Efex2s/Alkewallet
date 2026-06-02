@@ -1,0 +1,3 @@
+## 2024-06-02 - Navigation Menu Widget Selection
+**Learning:** Using `EditText` for static navigation menu items causes unintended soft keyboard triggers, which disrupts the user flow and is a significant accessibility hurdle for screen reader users. Refactoring these to `TextView` with `selectableItemBackground` preserves the visual hierarchy while providing appropriate interaction semantics.
+**Action:** Always use `TextView` or `Button` for non-editable navigation items. When refactoring existing layouts, preserve View IDs to maintain compatibility with generated ViewBinding classes and existing Activity logic.
