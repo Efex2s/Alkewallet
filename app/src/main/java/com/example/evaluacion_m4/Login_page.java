@@ -35,6 +35,10 @@ public class Login_page extends AppCompatActivity {
 
 
         });
+
+        binding.btnBack.setOnClickListener(v -> {
+            getOnBackPressedDispatcher().onBackPressed();
+        });
     }
 }
 
