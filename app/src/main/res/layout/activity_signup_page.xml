@@ -13,6 +13,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
         android:alpha="0.7"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
             android:id="@+id/imgViewStatusbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
             app:srcCompat="@drawable/statusbar" />
 
         <TextView
