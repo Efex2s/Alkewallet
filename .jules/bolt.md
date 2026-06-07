@@ -1,0 +1,3 @@
+## 2024-06-07 - Optimization of Splash Screen and Asset Cleanup
+**Learning:** Hardcoded delays in Splash Screens (like 3000ms) negatively impact perceived performance. Reducing them to 1000ms significantly improves the user's first impression. Additionally, using the default `Handler()` constructor is deprecated in modern Android SDKs; `new Handler(Looper.getMainLooper())` should be used instead to ensure thread safety for UI tasks.
+**Action:** Always check `Splash_Screen` or entry point activities for artificial delays and modernize `Handler` usage. Regularly audit the `drawable` folder for large, unreferenced assets like `circular.png` (~824KB) to maintain a lean APK size.
