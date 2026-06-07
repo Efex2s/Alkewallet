@@ -15,7 +15,7 @@ public class Mi_perfil extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.btnImageButton4.setOnClickListener(v->{
-            onBackPressed();
+            getOnBackPressedDispatcher().onBackPressed();
         });
     }
 }
