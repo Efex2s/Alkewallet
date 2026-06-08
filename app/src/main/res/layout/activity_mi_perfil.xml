@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="?android:attr/selectableItemBackground"
-            app:srcCompat="@mipmap/perfil_tres" />
+            app:srcCompat="@mipmap/perfil_tres"
+            android:contentDescription="@string/desc_back_button" />
     </LinearLayout>
 
     <LinearLayout
@@ -30,39 +31,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <EditText
-            android:id="@+id/editOpciones"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+        <TextView
+            android:id="@+id/tvOpciones"
+            style="@style/ProfileMenuItem"
             android:layout_marginTop="20dp"
             android:drawableStart="@drawable/setting"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Opciones" />
+            android:text="@string/menu_options"
+            android:contentDescription="@string/desc_menu_options" />
 
-        <EditText
-            android:id="@+id/editInformacion"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+        <TextView
+            android:id="@+id/tvInformacion"
+            style="@style/ProfileMenuItem"
             android:layout_marginTop="15dp"
             android:drawableStart="@drawable/perfil_cuatro"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Mi Información" />
+            android:text="@string/menu_info"
+            android:contentDescription="@string/desc_menu_info" />
 
-        <EditText
-            android:id="@+id/editTarjetas"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+        <TextView
+            android:id="@+id/tvTarjetas"
+            style="@style/ProfileMenuItem"
             android:layout_marginTop="15dp"
             android:drawableStart="@drawable/card"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Mis tarjetas" />
+            android:text="@string/menu_cards"
+            android:contentDescription="@string/desc_menu_cards" />
 
-        <EditText
-            android:id="@+id/editAyuda"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+        <TextView
+            android:id="@+id/tvAyuda"
+            style="@style/ProfileMenuItem"
             android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/centroayuda"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Centro de ayuda" />
+            android:text="@string/menu_help"
+            android:contentDescription="@string/desc_menu_help" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
