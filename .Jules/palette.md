@@ -1,0 +1,3 @@
+## 2024-06-09 - Improving Login Accessibility and UX
+**Learning:** Using `TextInputLayout` with `app:endIconMode="password_toggle"` significantly improves the user experience by allowing users to verify their password entry, which is especially important for accessibility and mobile users who are prone to typos. Additionally, marking decorative background images with `android:importantForAccessibility="no"` prevents screen readers from announcing redundant information.
+**Action:** Always prefer `TextInputLayout` for password fields and ensure decorative elements are explicitly marked as such to improve the screen reader experience.
