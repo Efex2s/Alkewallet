@@ -1,0 +1,3 @@
+## 2024-06-10 - Modernizing Handler usage and Splash optimization
+**Learning:** Using `new Handler()` without a specified Looper is a deprecated anti-pattern in modern Android (SDK 30+) as it can lead to bugs where the handler is implicitly associated with a thread that might not have a looper. Always use `new Handler(Looper.getMainLooper())` for UI-related tasks. Additionally, long artificial splash screen delays (e.g., 3000ms) negatively impact perceived app performance.
+**Action:** Always prefer `new Handler(Looper.getMainLooper())` and audit for artificial delays that can be reduced to improve time-to-interact.
