@@ -1,0 +1,3 @@
+## 2024-05-15 - Enhancing Security UX with Password Visibility Toggles
+**Learning:** Using Material Design `TextInputLayout` with `app:endIconMode="password_toggle"` provides a standard and accessible way for users to verify their password input, reducing friction during authentication. Additionally, marking decorative background images with `android:importantForAccessibility="no"` improves the screen reader experience by focusing only on relevant content.
+**Action:** When implementing authentication forms, always wrap password fields in `TextInputLayout` with a visibility toggle and ensure decorative assets are excluded from the accessibility tree.
