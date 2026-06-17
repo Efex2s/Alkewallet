@@ -14,6 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
         android:alpha="0.7"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,13 +53,19 @@
             android:layout_marginTop="30dp"
             android:text="Nombre" />
 
-        <EditText
-            android:id="@+id/editTxtnombreSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNombreSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu nombre"
-            android:inputType="textPersonName" />
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtnombreSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa tu nombre"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Apellido -->
         <TextView
@@ -68,13 +75,19 @@
             android:layout_marginTop="16dp"
             android:text="Apellido" />
 
-        <EditText
-            android:id="@+id/editTxtapellidosSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilApellidosSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu apellido"
-            android:inputType="textPersonName" />
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtapellidosSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa tu apellido"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <TextView
@@ -84,13 +97,19 @@
             android:layout_marginTop="16dp"
             android:text="Email" />
 
-        <EditText
-            android:id="@+id/editTxtemailSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmailSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu email"
-            android:inputType="textEmailAddress" />
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtemailSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa tu email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <TextView
@@ -100,13 +119,20 @@
             android:layout_marginTop="16dp"
             android:text="Contraseña" />
 
-        <EditText
-            android:id="@+id/editTxtcontrasenyaSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPasswordSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword" />
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtcontrasenyaSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa tu contraseña"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <TextView
@@ -116,14 +142,21 @@
             android:layout_marginTop="16dp"
             android:text="Confirmar Contraseña" />
 
-        <EditText
-            android:id="@+id/editTxtrecontrasenyaSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRePasswordSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="30dp"
-            android:hint="Reingresar tu contraseña"
-            android:inputType="textPassword" />
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtrecontrasenyaSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reingresar tu contraseña"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
