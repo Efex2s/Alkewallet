@@ -11,4 +11,8 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+    <string name="menu_opciones">Opciones</string>
+    <string name="menu_informacion">Mi Información</string>
+    <string name="menu_tarjetas">Mis tarjetas</string>
+    <string name="menu_ayuda">Centro de ayuda</string>
 </resources>
