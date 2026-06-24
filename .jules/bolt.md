@@ -1,0 +1,3 @@
+## 2025-01-24 - Layout Flattening and Visual Consistency
+**Learning:** When flattening a layout by removing redundant wrappers (e.g., removing a LinearLayout from a ConstraintLayout), simply transferring margins is not enough. ConstraintLayout's default behavior for conflicting constraints (e.g., having both start and end constraints) can cause centering/biasing that wasn't present in the original layout. Also, background colors must be migrated to the new root to maintain visual parity and reduce overdraw.
+**Action:** Always replicate the exact positioning logic (e.g., using only a start constraint if the original was start-aligned) and ensure all visual properties like backgrounds are correctly transferred to the remaining views.
