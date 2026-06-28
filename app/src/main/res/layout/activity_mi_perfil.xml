@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/cd_back_button"
             app:srcCompat="@mipmap/perfil_tres" />
     </LinearLayout>
 
@@ -30,39 +31,64 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <EditText
+        <TextView
             android:id="@+id/editOpciones"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
             android:drawableStart="@drawable/setting"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Opciones" />
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="@string/menu_opciones" />
 
-        <EditText
+        <TextView
             android:id="@+id/editInformacion"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
             android:drawableStart="@drawable/perfil_cuatro"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Mi Información" />
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="@string/menu_informacion" />
 
-        <EditText
+        <TextView
             android:id="@+id/editTarjetas"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
             android:drawableStart="@drawable/card"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Mis tarjetas" />
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="@string/menu_tarjetas" />
 
-        <EditText
+        <TextView
             android:id="@+id/editAyuda"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/centroayuda"
             android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Centro de ayuda" />
+            android:drawablePadding="16dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="@string/menu_ayuda" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
