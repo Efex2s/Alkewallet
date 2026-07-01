@@ -35,6 +35,8 @@
             android:layout_marginStart="300dp"
             android:clickable="true"
             android:focusable="true"
+            android:contentDescription="@string/cd_profile_image"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             app:srcCompat="@drawable/mujerhermosa" />
 
         <TextView
