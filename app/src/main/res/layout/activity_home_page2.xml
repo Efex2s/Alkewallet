@@ -33,7 +33,9 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:contentDescription="@string/cd_profile_pic"
             android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
@@ -74,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:contentDescription="@string/cd_notifications"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
