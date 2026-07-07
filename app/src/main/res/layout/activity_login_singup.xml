@@ -14,6 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/background_arrow_curve"
         android:alpha="0.7"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +32,8 @@
         <ImageView
             android:id="@+id/imgViewStatusbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no" />
 
         <TextView
             android:id="@+id/textView"
@@ -100,13 +102,19 @@
             android:layout_marginTop="16dp"
             android:text="Contraseña" />
 
-        <EditText
-            android:id="@+id/editTxtcontrasenyaSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword" />
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtcontrasenyaSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa tu contraseña"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <TextView
@@ -116,14 +124,20 @@
             android:layout_marginTop="16dp"
             android:text="Confirmar Contraseña" />
 
-        <EditText
-            android:id="@+id/editTxtrecontrasenyaSingUpPage"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="30dp"
-            android:hint="Reingresar tu contraseña"
-            android:inputType="textPassword" />
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTxtrecontrasenyaSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reingresar tu contraseña"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
