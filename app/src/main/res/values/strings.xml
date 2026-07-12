@@ -11,4 +11,5 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+    <string name="crear_cuenta_nueva">Crea una cuenta nueva</string>
 </resources>
