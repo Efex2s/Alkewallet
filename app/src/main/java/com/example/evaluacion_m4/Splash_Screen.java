@@ -3,6 +3,7 @@ package com.example.evaluacion_m4;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,13 +24,15 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
-        new Handler().postDelayed(new Runnable() {
+        // Optimization: Reduced splash screen delay from 3000ms to 1000ms to improve TTI (Time to Interactive).
+        // Using Looper.getMainLooper() ensures the task runs on the main thread and follows best practices.
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(Splash_Screen.this, Login_Singup_page.class);
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 1000);
     }
 }
