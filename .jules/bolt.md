@@ -1,0 +1,3 @@
+## 2023-11-20 - [Optimize Hardcoded Splash Screen Delay]
+**Learning:** Found that the splash screen had a hardcoded delay of 3000ms. In Android development, excessive splash screen delays are a severe bottleneck to Time to Interactive (TTI), resulting in a poor user startup experience. Additionally, using `new Handler()` without specifying a looper can result in thread safety issues and deprecation warnings on newer Android APIs.
+**Action:** Reduced the splash screen delay from 3000ms to 1000ms to optimize startup time, and instantiated `Handler` with `Looper.getMainLooper()` to ensure execution on the main UI thread.
