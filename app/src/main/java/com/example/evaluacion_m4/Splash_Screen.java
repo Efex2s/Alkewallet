@@ -23,13 +23,16 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
-        new Handler().postDelayed(new Runnable() {
+        // Bolt Optimization: Reduced hardcoded splash screen delay from 3000ms to 1000ms
+        // to significantly improve Time to Interactive (TTI) and overall user experience.
+        // Explicitly using Looper.getMainLooper() ensures thread safety and avoids deprecation warnings.
+        new Handler(android.os.Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(Splash_Screen.this, Login_Singup_page.class);
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 1000);
     }
 }
