@@ -19,132 +19,168 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="36dp"
-        android:paddingRight="36dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp">
+        android:fillViewport="true">
 
-        <ImageView
-            android:id="@+id/imgViewStatusbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Regístrate y empieza a transferir!!"
-            android:textColor="@color/black"
-            android:textSize="34sp"
-            android:textStyle="bold"
-            android:lines="2" />
+            android:orientation="vertical"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
 
-        <!-- Nombre -->
-        <TextView
-            android:id="@+id/txtViewnombreSingUpPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Nombre" />
+            <ImageView
+                android:id="@+id/imgViewStatusbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/editTxtnombreSingUpPage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu nombre"
-            android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Regístrate y empieza a transferir!!"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:lines="2" />
 
-        <!-- Apellido -->
-        <TextView
-            android:id="@+id/txtViewapellidosSingUpPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Apellido" />
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/txtViewnombreSingUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Nombre" />
 
-        <EditText
-            android:id="@+id/editTxtapellidosSingUpPage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu apellido"
-            android:inputType="textPersonName" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxtnombreSingUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa tu nombre"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/txtViewemailSingUpPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Email" />
+            <!-- Apellido -->
+            <TextView
+                android:id="@+id/txtViewapellidosSingUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Apellido" />
 
-        <EditText
-            android:id="@+id/editTxtemailSingUpPage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu email"
-            android:inputType="textEmailAddress" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxtapellidosSingUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa tu apellido"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/txtViewcontrasenyaSingUpPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Contraseña" />
+            <!-- Email -->
+            <TextView
+                android:id="@+id/txtViewemailSingUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email" />
 
-        <EditText
-            android:id="@+id/editTxtcontrasenyaSingUpPage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Ingresa tu contraseña"
-            android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutEmailSingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxtemailSingUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa tu email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/txtViewrecontrasenyaSingUpPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Confirmar Contraseña" />
+            <!-- Contraseña -->
+            <TextView
+                android:id="@+id/txtViewcontrasenyaSingUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Contraseña" />
 
-        <EditText
-            android:id="@+id/editTxtrecontrasenyaSingUpPage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="30dp"
-            android:hint="Reingresar tu contraseña"
-            android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutContrasenya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:endIconMode="password_toggle">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxtcontrasenyaSingUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa tu contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnSingUpPage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="10dp"
-            android:text="Registrarse"
-            android:background="@drawable/boton_redondo" />
+            <!-- Confirmar Contraseña -->
+            <TextView
+                android:id="@+id/txtViewrecontrasenyaSingUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Confirmar Contraseña" />
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutRecontrasenya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="30dp"
+                app:endIconMode="password_toggle">
 
-        <TextView
-            android:id="@+id/tvYaTienesCuentaSingUpPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"
-            android:text="¿Ya tienes una cuenta? Inicia sesión"
-            android:textStyle="bold"
-            android:textColor="@color/celesteM4" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxtrecontrasenyaSingUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Reingresar tu contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnSingUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Registrarse"
+                android:background="@drawable/boton_redondo" />
+
+            <TextView
+                android:id="@+id/tvYaTienesCuentaSingUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="¿Ya tienes una cuenta? Inicia sesión"
+                android:textStyle="bold"
+                android:textColor="@color/celesteM4" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
