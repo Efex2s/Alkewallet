@@ -1,0 +1,3 @@
+## 2026-07-27 - EditText as Navigation Item
+**Learning:** Using raw `EditText` components for static profile menu/navigation options is a critical UX and accessibility issue in Android. It triggers the virtual keyboard upon touch, confusing users and complicating screen reader navigation. Converting these items to focusable, clickable `TextView` components with touch feedback (e.g., selectableItemBackground) maintains correct semantics while keeping layouts fully accessible.
+**Action:** Always employ `TextView` or standard clickable layout wrappers instead of input fields (like `EditText` or `TextInputEditText`) when presenting static menu, settings, or navigation choices in Android applications.
