@@ -10,13 +10,16 @@
     tools:context=".enviarDinero">
 
 
-    <ImageView
+    <ImageButton
         android:id="@+id/flechaDireccion"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="Volver"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_back_button"
+        android:clickable="true"
+        android:focusable="true"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,6 +44,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
+        android:contentDescription="@string/cd_send_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textenviardinero"
         app:srcCompat="@drawable/flecha_enviar_dinero" />
@@ -51,6 +55,7 @@
         android:layout_width="76dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
+        android:contentDescription="@string/cd_recipient_image"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/yara_khalil" />
