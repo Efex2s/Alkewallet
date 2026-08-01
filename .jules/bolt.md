@@ -1,0 +1,3 @@
+## 2024-11-20 - [Optimize Startup & APK Size]
+**Learning:** Hardcoded splash delays of 3000ms significantly increase Time-to-Interactive (TTI) without providing any technical value. Standardizing the delay to 1000ms cuts the initial delay by 66% and keeps the UI responsive. Additionally, explicitly instantiating Handlers with `Looper.getMainLooper()` is crucial in Android Activities to avoid deprecation warnings and ensure thread-safe UI scheduling. Removing large unreferenced asset files like `circular.png` (~824KB) reduces build footprint and APK delivery size.
+**Action:** Always scan splash/welcome screens for arbitrary delays and replace deprecated `new Handler()` constructors with main-thread scoped loopers. Regularly run resource audits to prune unused images.
