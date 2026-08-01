@@ -46,6 +46,7 @@
         android:layout_marginTop="40dp"
         android:scaleType="centerCrop"
         android:background="@null"
+        android:contentDescription="@string/cd_recipient_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         app:srcCompat="@drawable/imagen_ingresar_dinero" />
