@@ -1,0 +1,3 @@
+## 2026-03-01 - Optimizing Splash Screen Delay for Startup Efficiency
+**Learning:** Hardcoded splash delays of 3+ seconds unnecessarily hurt the application's Time to Interactive (TTI) metrics. Reducing it to 1 second significantly improves startup performance while still allowing the splash graphic to show. Additionally, using standard `Handler()` without specifying a `Looper` causes deprecation warnings and thread safety issues in modern Android.
+**Action:** Always reduce splash delays to the minimum required duration and instantiate `Handler` with `Looper.getMainLooper()` to satisfy platform and performance standards.
