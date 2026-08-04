@@ -1,0 +1,3 @@
+## 2026-08-04 - [Splash Screen Startup Delay and Lifecycle Safety]
+**Learning:** Raw Handler calls without a Looper parameters are deprecated in modern API levels because they can bind to unpredictable threads. Additionally, non-static anonymous Runnables delayed in Activities hold implicit outer references that cause temporary memory leaks if the Activity is finished or rotated early. An artificial 3000ms splash screen transition is a major bottleneck to Time-To-Interactive (TTI).
+**Action:** Explicitly construct handlers using `new Handler(Looper.getMainLooper())`, reduce artificial splash delays to 1000ms or less to boost perceived speed, and clean up pending messages in `onDestroy()` using `removeCallbacksAndMessages(null)` to protect memory lifecycle boundaries.
