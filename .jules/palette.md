@@ -1,0 +1,3 @@
+## 2024-08-08 - EditText as Navigation Item
+**Learning:** Using raw `EditText` components for navigation or menu options is a critical anti-pattern. Tapping them causes the soft keyboard to pop up, frustrating users, while failing to provide interactive touch feedback (ripple) or correct accessibility roles. Converting these to clickable/focusable `TextView` elements with interactive states avoids input issues and ensures screen reader accessibility.
+**Action:** Always verify that static lists, menus, or menu items are implemented as clickable `TextView` elements or proper buttons, with standard `?android:attr/selectableItemBackground` and correct layout alignment/padding rather than raw editable `EditText` fields.
