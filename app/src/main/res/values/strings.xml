@@ -11,4 +11,11 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+
+    <!-- Profile menu strings (Spanish translations) -->
+    <string name="profile_options">Opciones</string>
+    <string name="profile_info">Mi Información</string>
+    <string name="profile_cards">Mis tarjetas</string>
+    <string name="profile_help">Centro de ayuda</string>
+    <string name="cd_back_button">Atrás</string>
 </resources>
