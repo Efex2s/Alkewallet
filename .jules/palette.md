@@ -1,0 +1,3 @@
+## 2024-08-10 - Explicit Input Validation and Interaction Feedback in Transaction Screens
+**Learning:** In banking and money transfer apps, silently succeeding and immediately finishing an activity when a form is submitted without input validation violates the core interaction guidelines. Providing explicit inline visual error indicators (like `setError` on Android input fields) and clear toast notifications upon successful transactions prevents accidental clicks and builds user confidence.
+**Action:** Always ensure that interactive transaction and form fields validate inputs comprehensively before closing the screen or modifying state. Accompany successful actions with brief but descriptive visual confirmations (e.g., Toast notifications).
