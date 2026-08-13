@@ -1,0 +1,3 @@
+## 2026-08-10 - EditText as Navigation Item Anti-Pattern and screen reader contrast
+**Learning:** Using `EditText` fields for static navigation items (e.g. menu choices) is a severe UX anti-pattern on Android. It causes unexpected virtual keyboard overlays, incorrect screen-reader semantic focus, and lack of touch feedback. Replacing them with focusable and clickable `TextView` components with ripple feedback restores proper semantics, contrast, and standard navigation behaviour.
+**Action:** Always use focusable, clickable `TextView` fields with `?android:attr/selectableItemBackground` for static menu lists and navigation elements, and ensure all icon/button components have appropriate `contentDescription` properties.
