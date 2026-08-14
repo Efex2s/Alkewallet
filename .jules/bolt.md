@@ -1,0 +1,3 @@
+## 2024-08-14 - Splash Screen Startup Delay and Thread-Safe Handler Management
+**Learning:** Artificial delays in Splash activities (like a hardcoded 3000ms delay) severely degrade the Time to Interactive (TTI) metric. Additionally, using a Handler's default constructor without explicitly declaring the main thread's Looper is deprecated and causes thread-unsafety. Failing to cancel scheduled execution callbacks on Activity destruction leads to context memory leaks when the user exits before the delay completes.
+**Action:** Minimize hardcoded launch delays to 1000ms or less, instantiate all Handlers using `Looper.getMainLooper()`, and clean up any pending tasks in the `onDestroy()` lifecycle callback.
