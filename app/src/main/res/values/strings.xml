@@ -11,4 +11,7 @@
     <string name="yatienesCuentaSingUpPage">¿ Ya tienes Cuenta??</string>
     <string name="olvidateTuConLoginPage">¿ Olvidaste tu contraseña ?</string>
     <string name="textoLoginPage">¿ Olvidaste tu contraseña ?</string>
+    <string name="cd_back_button">Volver</string>
+    <string name="cd_send_icon">Icono de enviar dinero</string>
+    <string name="cd_recipient_image">Imagen del destinatario</string>
 </resources>
