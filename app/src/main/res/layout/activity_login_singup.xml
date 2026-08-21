@@ -144,7 +144,11 @@
             android:layout_gravity="center"
             android:text="¿Ya tienes una cuenta? Inicia sesión"
             android:textStyle="bold"
-            android:textColor="@color/celesteM4" />
+            android:textColor="@color/celesteM4"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
