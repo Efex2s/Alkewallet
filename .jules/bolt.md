@@ -1,0 +1,3 @@
+## 2024-05-18 - Startup TTI Optimization and Handler Memory Leak Prevention
+**Learning:** Hardcoded 3000ms delay in startup splash activity (`Splash_Screen.java`) unnecessarily delays Time to Interactive (TTI) by 2000ms. Additionally, instantiating an unreferenced `Handler` without `Looper.getMainLooper()` generates deprecation warnings and risks memory leaks if callbacks are not cleared upon activity destruction (`onDestroy`).
+**Action:** Audit startup sequences to minimize delay to the minimum threshold necessary (e.g., 1000ms), pass `Looper.getMainLooper()` to `Handler` instances, and always clean up `Runnable` callbacks in `onDestroy()`.
