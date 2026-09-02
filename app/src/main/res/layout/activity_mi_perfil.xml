@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/cd_back_button"
             app:srcCompat="@mipmap/perfil_tres" />
     </LinearLayout>
 
@@ -30,39 +31,68 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <EditText
+        <TextView
             android:id="@+id/editOpciones"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:textColor="@color/black"
+            android:text="@string/profile_options"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
             android:drawableStart="@drawable/setting"
-            android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Opciones" />
+            android:drawableEnd="@drawable/arrow_icon" />
 
-        <EditText
+        <TextView
             android:id="@+id/editInformacion"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:textColor="@color/black"
+            android:text="@string/profile_info"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
             android:drawableStart="@drawable/perfil_cuatro"
-            android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Mi Información" />
+            android:drawableEnd="@drawable/arrow_icon" />
 
-        <EditText
+        <TextView
             android:id="@+id/editTarjetas"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:textColor="@color/black"
+            android:text="@string/profile_cards"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
             android:drawableStart="@drawable/card"
-            android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Mis tarjetas" />
+            android:drawableEnd="@drawable/arrow_icon" />
 
-        <EditText
+        <TextView
             android:id="@+id/editAyuda"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
-            android:drawableEnd="@drawable/arrow_icon"
-            android:hint=" Centro de ayuda" />
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:textColor="@color/black"
+            android:text="@string/profile_help"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/centroayuda"
+            android:drawableEnd="@drawable/arrow_icon" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
