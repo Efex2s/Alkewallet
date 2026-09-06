@@ -35,6 +35,10 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/cd_profile_picture"
+            android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
         <TextView
@@ -74,6 +78,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/cd_notifications"
+            android:focusable="true"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
@@ -137,6 +145,7 @@
         android:layout_height="222dp"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="76dp"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.536"
