@@ -18,7 +18,10 @@
             android:id="@+id/btnImageButton4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?android:attr/selectableItemBackground"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/cd_back_button"
             app:srcCompat="@mipmap/perfil_tres" />
     </LinearLayout>
 
