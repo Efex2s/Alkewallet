@@ -1,0 +1,3 @@
+## 2026-03-31 - Splash Screen Startup Delay and Handler Memory Leak
+**Learning:** Hardcoded startup delays in Splash screens significantly degrade Time to Interactive (TTI) and user perception of application performance. Additionally, instantiating `Handler` without `Looper.getMainLooper()` causes deprecation warnings and potential thread safety issues, while failing to unregister callbacks on `onDestroy()` leaks the Activity context.
+**Action:** Always minimize artificial delays in startup activities to <= 1000ms (or remove entirely if data loading is complete), explicitly use `Looper.getMainLooper()` when creating UI thread handlers, and clear callbacks in `onDestroy()`.
