@@ -1,0 +1,3 @@
+## 2025-03-31 - EditText as Navigation Item Anti-Pattern
+**Learning:** Using `EditText` for static, navigable menu items misleads accessibility services into reporting editable text fields, prevents proper screen reader hints, and allows unexpected software keyboard activation on touch. Replacing them with `TextView` using `android:background="?attr/selectableItemBackground"` provides clear interactive affordance, ripple feedback, and correct accessibility semantics.
+**Action:** Always use `TextView` (or `Button`) with explicit ripple backgrounds and `android:textColor` for navigation menu items rather than editable `EditText` widgets.
