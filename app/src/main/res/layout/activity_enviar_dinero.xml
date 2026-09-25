@@ -10,12 +10,15 @@
     tools:context=".enviarDinero">
 
 
-    <ImageView
+    <ImageButton
         android:id="@+id/flechaDireccion"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
         android:contentDescription="Volver"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
