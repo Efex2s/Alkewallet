@@ -1,0 +1,3 @@
+## 2026-03-31 - Anti-Pattern: EditText used for Static Navigation Menu Items
+**Learning:** Using `EditText` for static, non-editable menu navigation items (like "Opciones" or "Centro de ayuda") creates a poor user experience by triggering virtual keyboards, displaying editable input cursors, and miscommunicating the interactive nature of navigation items to screen readers.
+**Action:** Always use `TextView` (or `Button` / `ConstraintLayout` rows) for menu items with `android:clickable="true"`, `android:focusable="true"`, `android:background="?attr/selectableItemBackground"`, and proper padding/gravity for tap feedback and screen reader accessibility.
