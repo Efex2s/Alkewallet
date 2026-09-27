@@ -20,6 +20,7 @@
         android:id="@+id/curvaInferior"
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:importantForAccessibility="no"
         android:scaleType="fitXY"
         android:src="@drawable/curva_fondo"
         app:layout_constraintTop_toBottomOf="@id/top_background"
@@ -30,6 +31,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:importantForAccessibility="no"
         android:scaleType="fitXY"
         android:src="@drawable/backgroun_curve"
         app:layout_constraintTop_toBottomOf="@id/top_background"
@@ -52,6 +54,7 @@
             android:id="@+id/logo"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:importantForAccessibility="no"
             android:src="@drawable/logo" />
 
 
