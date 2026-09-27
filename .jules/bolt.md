@@ -1,0 +1,3 @@
+## 2025-05-18 - Splash Screen TTI Optimization and Memory Leak Prevention
+**Learning:** Hardcoded 3000ms splash screen delays create unnecessary TTI (Time to Interactive) latency, and using default `Handler()` constructors without explicit `Looper.getMainLooper()` binding can lead to deprecation warnings and thread-safety risks. Furthermore, uncancelled background handlers retain Activity context references, causing memory leaks if the Activity is destroyed early.
+**Action:** Always reduce splash screen delay to the minimum required duration (e.g., 1000ms), explicitly pass `Looper.getMainLooper()` to `Handler` instances, and remove pending callbacks in `onDestroy()`.
