@@ -1,0 +1,3 @@
+## 2025-10-03 - Splash Screen TTI Optimization & Lifecycle Memory Leak Prevention
+**Learning:** Hardcoded `Handler.postDelayed()` timers in splash screens significantly inflate app Time to Interactive (TTI). Using the parameterless `new Handler()` constructor causes thread-binding issues on non-main threads. Crucially, failing to cancel pending `Runnable` callbacks in `onDestroy()` leaks the `Activity` context when users quickly leave or rotate the screen.
+**Action:** Always instantiate `Handler` with `Looper.getMainLooper()`, clear pending callbacks in `onDestroy()`, check `!isFinishing() && !isDestroyed()` before launching intents, and reduce artificial splash delays to 1000ms or less.
