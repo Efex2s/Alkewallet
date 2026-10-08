@@ -1,0 +1,3 @@
+## 2024-05-20 - EditText misused for Static Navigation Options
+**Learning:** Raw `EditText` views used as navigation menu options prevent screen readers from announcing menu actions correctly, confuse keyboard navigation focus, and allow users to focus/edit text on navigation labels. Converting them to `TextView` elements with `android:textColor="@color/black"`, `android:gravity="center_vertical"`, and `?attr/selectableItemBackground` touch ripples preserves visual design while making menu options semantically correct and accessible.
+**Action:** Always use `TextView` with ripple backgrounds and proper `android:text` resources for non-editable navigation items instead of `EditText` with hardcoded hints.
