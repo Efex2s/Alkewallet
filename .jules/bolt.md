@@ -1,0 +1,3 @@
+## 2025-02-28 - Startup TTI Optimization & Handler Leak Prevention
+**Learning:** Hardcoded 3000ms splash screen delays create unnecessary TTI lag. Furthermore, instantiating `Handler` without `Looper.getMainLooper()` causes deprecation warnings and potential background thread execution bugs. Uncleared `postDelayed` callbacks maintain strong references to destroyed `Activity` instances causing memory leaks.
+**Action:** Always reduce splash delays to the minimum functional duration (e.g. 1000ms), construct `Handler` with `Looper.getMainLooper()`, and clean up `Handler` callbacks in `onDestroy()`.
