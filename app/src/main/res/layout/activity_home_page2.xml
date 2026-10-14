@@ -155,6 +155,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/cd_contact_avatar"
                 android:src="@drawable/hombrehermoso" />
 
             <TextView
@@ -180,6 +181,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/cd_contact_avatar"
                 android:src="@drawable/mujerfea" />
 
             <TextView
@@ -205,6 +207,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/cd_contact_avatar"
                 android:src="@drawable/mujerhermosa" />
 
             <TextView
@@ -230,6 +233,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:contentDescription="@string/cd_contact_avatar"
                 android:src="@drawable/hombrefeo" />
 
             <TextView
