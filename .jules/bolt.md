@@ -1,0 +1,3 @@
+## 2025-05-18 - Splash Screen Delay & Handler Context Leak Optimization
+**Learning:** Hardcoded splash screen timers (3000ms) significantly delay Time to Interactive (TTI) without providing functional value. Unanchored `Handler()` constructors introduce thread deprecation risks and hold implicit activity references that cause context memory leaks if the Activity is destroyed before the runnable executes.
+**Action:** Always bind `Handler` explicitly to `Looper.getMainLooper()`, reduce artificial startup delays to the minimum required duration (1000ms), and unbind pending callbacks in `onDestroy()`.
