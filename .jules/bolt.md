@@ -1,0 +1,3 @@
+## 2025-10-19 - Splash Screen TTI & Handler Lifecycle Leak Prevention
+**Learning:** Hardcoded startup delays in Splash Activities directly degrade launch speed and Time to Interactive (TTI). Constructing `Handler` without `Looper.getMainLooper()` triggers deprecation warnings and thread safety issues. Failing to unbind callbacks in `onDestroy()` leaks Activity references if the user navigates away or closes the app before timer expiration.
+**Action:** Always reduce artificial splash delays to the minimum functional duration (e.g., 1000ms), construct `Handler` explicitly with `Looper.getMainLooper()`, and call `handler.removeCallbacks(...)` inside `onDestroy()`.
