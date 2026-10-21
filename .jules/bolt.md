@@ -1,0 +1,3 @@
+## 2026-10-21 - Splash Screen Delay Optimization and Handler Lifecycle
+**Learning:** Hardcoded splash delays (e.g., 3000ms) significantly slow down Time to Interactive (TTI) without providing functional value. Additionally, instantiating `Handler` without `Looper.getMainLooper()` produces deprecation warnings and thread-safety risks, while uncancelled Handler callbacks in `Splash_Screen` hold strong references to destroyed Activity contexts.
+**Action:** Always minimize hardcoded splash screen delays to <= 1000ms, pass `Looper.getMainLooper()` to `Handler` instances, and remove callbacks in `onDestroy()` to prevent memory leaks.
