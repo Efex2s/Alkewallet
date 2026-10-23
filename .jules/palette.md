@@ -1,0 +1,3 @@
+## 2025-05-10 - EditText as Navigation Item Anti-Pattern
+**Learning:** Using `EditText` views for clickable navigation options or list items causes software keyboards to pop up unexpectedly, confusing users and impairing screen reader navigation. Replacing them with non-editable `TextView` items styled with ripple backgrounds (`?attr/selectableItemBackground`), explicit `textColor`, and proper compound drawables (`drawableStart`) ensures clean accessibility semantics and expected touch feedback.
+**Action:** Always refactor navigation list items from `EditText` to `TextView` with `clickable="true"`, `focusable="true"`, and ripple drawables.
