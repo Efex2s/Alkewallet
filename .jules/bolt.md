@@ -1,0 +1,3 @@
+## 2025-10-23 - Splash Screen TTI Optimization & Context Leak Prevention
+**Learning:** Hardcoded Handler delays in Splash Activities artificially inflate Time to Interactive (TTI) on cold starts. Furthermore, un-cleared Handler delayed runnables on main thread hold strong references to Activity context, causing memory leaks if the user exits before timeout.
+**Action:** Always reduce splash delays to the minimum functional duration (e.g., 1000ms), construct Handlers explicitly with `Looper.getMainLooper()`, and clean up pending runnables in `onDestroy()` via `handler.removeCallbacks(runnable)`.
