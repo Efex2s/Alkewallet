@@ -1,0 +1,3 @@
+## 2025-05-18 - Splash Screen Latency & Handler Memory Leak Prevention
+**Learning:** Hardcoded `postDelayed` timers in startup activities create unnecessary latency before Time to Interactive (TTI), and instantiating `Handler` without `Looper.getMainLooper()` or failing to cancel callbacks in `onDestroy()` causes potential memory leaks and thread safety warnings in Android UI contexts.
+**Action:** Always reduce hardcoded startup delays to minimal UX requirements (e.g. 1000ms), construct `Handler` explicitly with `Looper.getMainLooper()`, and clean up scheduled callbacks using `removeCallbacks` in `onDestroy()`.
