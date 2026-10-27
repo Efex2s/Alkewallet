@@ -1,0 +1,3 @@
+## 2026-03-28 - Minimize Splash Delay & Prevent Handler Context Leaks
+**Learning:** Hardcoded 3000ms Handler delays in Splash Screen Activities unnecessarily increase app Time to Interactive (TTI). Constructing Handler without explicit `Looper.getMainLooper()` causes API deprecation warnings and thread safety risks, while missing callback removal in `onDestroy()` leaks activity context if the user exits during the delay.
+**Action:** Always reduce splash delay to the minimum reasonable duration (~1000ms), construct Handler with `Looper.getMainLooper()`, and clean up callbacks via `removeCallbacks(...)` in `onDestroy()`.
