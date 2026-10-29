@@ -1,0 +1,3 @@
+## 2026-03-29 - Startup Time Optimization & Handler Lifecycle Management
+**Learning:** Artificial delays in splash activities (e.g. 3000ms Handler postDelayed) directly degrade Time To Interactive (TTI) without providing value. Furthermore, implicit parameterless `new Handler()` constructors risk thread-mismatch warnings in API 30+, and failing to clear delayed runnables on `onDestroy()` causes Activity context memory leaks.
+**Action:** Always minimize splash screen delays (to 1000ms or less), explicitly construct `Handler(Looper.getMainLooper())`, and clear pending callbacks in `onDestroy()` using `handler.removeCallbacks()`.
