@@ -1,0 +1,3 @@
+## 2025-05-18 - Splash Screen Delay Optimization and Handler Context Leaks
+**Learning:** Hardcoded 3000ms splash screen delays create unnecessary friction, increasing startup latency and degrading Time to Interactive (TTI). Furthermore, instantiating parameterless `Handler()` constructors without explicit `Looper.getMainLooper()` bindings risks executing on arbitrary threads or using deprecated APIs. Uncleared delayed callbacks in splash screen activities cause memory leaks by retaining the `Activity` context after destruction.
+**Action:** Always reduce splash delay to minimal duration (1000ms or lower), bind `Handler` explicitly with `Looper.getMainLooper()`, and clean up delayed callbacks (`removeCallbacks`) in `onDestroy()`.
