@@ -24,7 +24,7 @@
 
         <activity android:name=".Login_page"        android:exported="false" />
         <activity android:name=".login_singup"      android:exported="false" />
-        <activity android:name=".SignupPage"        android:exported="false" />
+        <!-- Removed unused SignupPage entry: no SignupPage.java exists, causing MissingClass lint errors -->
         <activity android:name=".Login_Singup_page" android:exported="false" />
 
         <activity android:name=".Home_Page"         android:exported="false" />
