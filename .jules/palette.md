@@ -1,0 +1,3 @@
+## 2025-05-18 - Replacing Misused EditText With Accessible Interactive TextViews
+**Learning:** In Android layouts, using `EditText` as a navigation list row / menu item is an anti-pattern. `EditText` exposes an editable text field to accessibility services and keyboards, causing soft keyboards to pop up or screen readers to announce an editable field when the user only intended to navigate. Additionally, missing leading icons in menu lists creates visual misalignment across rows.
+**Action:** Always use interactive `TextView` (or `MaterialButton` / `ListItem`) with `?attr/selectableItemBackground`, `clickable="true"`, `focusable="true"`, vertical centering, consistent `drawableStart`/`drawableEnd` padding, and minimum 48dp touch target height for navigation options.
