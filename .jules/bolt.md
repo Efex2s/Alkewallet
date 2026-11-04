@@ -1,0 +1,3 @@
+## 2026-02-01 - Splash Delay Optimization & Handler Leak Prevention
+**Learning:** Hardcoded startup delays (e.g. 3000ms Handler postDelayed in Splash Activities) directly penalize Time-to-Interactive (TTI) without providing functional value. Furthermore, instantiating `new Handler()` without explicit Looper can trigger deprecation warnings and postDelayed callbacks risk leaking Activity context if the user backs out before execution.
+**Action:** Minimize artificial splash delays to 1000ms max, construct Handler with `Looper.getMainLooper()`, and clean up callbacks in `onDestroy()` with `handler.removeCallbacks(...)`.
