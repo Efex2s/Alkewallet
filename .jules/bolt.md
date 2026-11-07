@@ -1,0 +1,3 @@
+## 2024-11-07 - Unreferenced High-Resolution Drawables Inflate APK Size
+**Learning:** High-resolution assets left behind in `res/drawable/` without any XML or Java references directly bloat the generated APK package by their full file size unless resource shrinking is enabled. In this project, `circular.png` was 843,759 bytes (~843KB / ~824KB compressed in APK as `res/_Q.png`), inflating the release APK without being displayed anywhere in the application.
+**Action:** Audit drawable assets for references in `res/layout/` and Java/Kotlin code, deleting unused assets to immediately recover bundle size and improve download/install performance.
