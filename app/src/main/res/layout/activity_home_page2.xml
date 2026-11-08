@@ -33,7 +33,9 @@
             android:layout_width="74dp"
             android:layout_height="67dp"
             android:layout_marginStart="300dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:contentDescription="@string/cd_profile_picture"
             android:focusable="true"
             app:srcCompat="@drawable/mujerhermosa" />
 
@@ -74,6 +76,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/cd_notifications"
+            android:focusable="true"
             app:srcCompat="@drawable/campana" />
     </LinearLayout>
 
@@ -85,7 +91,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="234dp"
         android:fontFamily="casual"
-        android:text="Ultimas transacciones"
+        android:text="@string/ultimas_transacciones"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
@@ -155,6 +161,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/hombrehermoso" />
 
             <TextView
@@ -165,7 +172,9 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+68.0"
-                android:textScaleX="2" />
+                android:textColor="@color/verdebutton"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -180,6 +189,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/mujerfea" />
 
             <TextView
@@ -190,7 +200,9 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-20.0"
-                android:textScaleX="2" />
+                android:textColor="@color/red_expense"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -205,6 +217,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/mujerhermosa" />
 
             <TextView
@@ -215,7 +228,9 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="+120.0"
-                android:textScaleX="2" />
+                android:textColor="@color/verdebutton"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -230,6 +245,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/hombrefeo" />
 
             <TextView
@@ -240,7 +256,9 @@
                 android:layout_marginEnd="10dp"
                 android:gravity="center_vertical"
                 android:text="-54.20"
-                android:textScaleX="2" />
+                android:textColor="@color/red_expense"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
