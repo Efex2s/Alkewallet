@@ -62,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/centroayuda"
             android:drawableEnd="@drawable/arrow_icon"
             android:hint=" Centro de ayuda" />
     </LinearLayout>
